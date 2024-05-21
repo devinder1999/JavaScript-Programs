@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program(23) Accept the number of days from the user and calculate the charge for library according to following </title>
+</head>
+<body>
+    
+    <h1> Accept the number of days from the user and calculate the charge for library according to
+        following <br>
+        Six to ten days : Rs 3/day. <br>
+        11 to 15 days : Rs 4/day <br>
+        After 15 days : Rs 5/day <br> </h1>
+        
+        Enter number of days:- <input id="day"> <br>
+        <p id="result"></p>
+        
+        <button onclick="days()">Show Charges</button>
+        
+<script>
+
+function days()
+{
+    var nd= (document.getElementById("day").value)
+    
+if (nd <= 5)
+{
+    var amt = nd * 2
+    document.getElementById("result").innerHTML="Total amount to pay is = "+ amt ;
+}
+            
+else if ((nd >=6) && (nd <=10))
+{
+    var amt = nd * 3
+    document.getElementById("result").innerHTML="Total amount to pay is = "+ amt ;
+}
+
+else if ((nd >= 11) && (nd <= 15))
+{
+    var amt = nd * 4
+    document.getElementById("result").innerHTML="Total amount to pay is = "+ amt ;
+}
+else
+{
+    var amt = nd * 5
+    document.getElementById("result").innerHTML="Total amount to pay is = "+ amt ;
+}
+        
+}
+
+</script>
+
+</body>
+</html>

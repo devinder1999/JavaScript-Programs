@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check water is boiling or not at 100 degree</title>
+</head>
+<body>
+
+    <h1>Program:-(13) check water is boiling or not at 100 degree</h1>
+
+    Enter Any Number value:-<input id="num"><br>
+
+    Show Output :-<h3 id="result"></h3>
+    <button onclick="boiling()">Check it</button><br>
+
+    <script>
+
+    function boiling()
+{
+    var temp = parseInt(document.getElementById("num").value);
+
+    if(temp>=100)
+    {
+        document.getElementById("result").innerHTML= " Water is Boiling "
+    }
+
+    else
+    {
+        document.getElementById("result").innerHTML= " Water is not Boiling "
+    }
+}
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept the electric units from user and calculate the bill according to the following rates</title>
+</head>
+<body>
+
+    <h1> Program(22) Accept the electric units from user and calculate the bill according to the following rates. <br>
+First 100 Units: Free <br>
+Next 200 Units : Rs 2 per day. <br>
+Above 300 Units: Rs 5 per day. <br>
+if number of unit is 500 then total bill = 0+400 + 1000 = 1400 <br>
+</h1>
+
+Enter number of units:- <input id="unit"> <br>
+
+<p id="result"></p> <br>
+
+<button onclick="units()">Show Units</button>
+
+<script>
+
+function units()
+{
+
+    
+     var ut = (document.getElementById("unit").value)
+    
+    if (ut <=100)
+    {
+        var amt = 0
+        document.getElementById("result").innerHTML="Total amount to pay is = "+ amt ;
+    }
+
+else if ((ut >100 ) && (ut <= 300))
+{
+    
+    var amt= (ut-100) *2
+    document.getElementById("result").innerHTML=" Total amount to pay is = "+ amt ; 
+}
+
+else
+{
+     var amt = 400 + (ut - 300)*5
+    document.getElementById("result").innerHTML="Total amount to pay is = "+ amt ;
+}
+
+}
+</script>
+</body>
+</html>

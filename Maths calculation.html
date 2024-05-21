@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths calculation in javascript</title>
+</head>
+<body>
+    Enter First Number<input id="num1"><br>
+    Enter Second Number<input id="num2"><br>
+
+    <button onclick="add()">ADD(+)</button>
+
+    <button onclick="subtract()">Subtract(-)</button><br>
+
+    <button onclick="multiply()">Multiply(*)</button>
+
+    <button onclick="divide()">Divide(/)</button><br>
+
+    Percentage<input id="percentage">
+
+    
+
+    <button onclick="percentage()">Percentage(%)</button><br><br>
+
+
+    Length<input id="length">
+    Width<input id="width">
+    <button onclick="Square()">Calculate Square</button>
+    <p id="result"></p><br>
+
+    <button onclick="Rectangle()">Calculate Rectangle</button>
+    <p id="r1"></p><br>
+
+    <!-- problem in this program
+        
+        Ungrouped Data to find mean median mode<br>
+
+    Enter First Number(X) <input id="f1">
+    Total Number of frequency(N)<input id="f2"><br><br>
+    Result of Mean<input id="mean">
+    Result of Median<input id="median">
+    Result of Mode<input id="mode"><br>
+
+    <button onclick="mean()">Mean</button>
+
+    <button onclick="median()">Median</button>
+
+    <button onclick="mode()">Mode</button><br> -->
+
+    <script>
+
+function add()
+    {
+        var a = parseInt( document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a+b;
+        alert(c);
+      
+    }
+
+    function subtract()
+    {
+        var a = parseInt( document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a-b;
+        alert(c);
+      
+    }
+
+    function multiply()
+    {
+        var a = parseInt( document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a*b;
+        alert(c);
+      
+    }
+
+    function divide()
+    {
+        var a = parseInt( document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        var c = a/b;
+        alert(c);
+      
+    }
+
+
+    function percentage()
+    {
+        var a = parseInt( document.getElementById("num1").value);
+        var b = parseInt(document.getElementById("num2").value);
+        c = (a/b)*100;
+        document.getElementById("percentage").value =c;
+      
+    }
+
+
+
+    function Square()
+    {
+  var length = document.getElementById("length").value;
+  var width = document.getElementById("width").value;
+  var area = length * width;
+  var perimeter = 2 * (length + width);
+  document.getElementById("result").innerHTML = "Area: " + area + ", Perimeter: " + perimeter;
+}
+
+function Rectangle() 
+{
+  var length = document.getElementById("length").value;
+  var width = document.getElementById("width").value;
+  var area = length * width;
+  var perimeter = 2 * (length + width);
+  document.getElementById("r1").innerHTML = "Area: " + area + ", Perimeter: " + perimeter;
+}
+
+//New Program of triangle
+
+var base = parseFloat(prompt("Enter the base of the triangle:"));
+var height = parseFloat(prompt("Enter the height of the triangle:"));
+
+// Calculate the area of the triangle
+var area = (base * height) / 2;
+
+// Prompt the user to enter the length of all three sides of the triangle
+var side1 = parseFloat(prompt("Enter the length of side 1:"));
+var side2 = parseFloat(prompt("Enter the length of side 2:"));
+var side3 = parseFloat(prompt("Enter the length of side 3:"));
+
+// Calculate the semi-perimeter of the triangle
+var s = (side1 + side2 + side3) / 2;
+
+// Calculate the perimeter of the triangle
+var perimeter = side1 + side2 + side3;
+
+alert("The area of the triangle is: " + area + "\nThe perimeter of the triangle is: " + perimeter);
+
+/* this is a mean median mode fumctions
+
+function mean()
+ {
+        var a = parseInt( document.getElementById("f1").value);
+        var b = parseInt(document.getElementById("f2").value);
+        c;
+        document.getElementById("mean").value =c;
+      
+    }
+
+    function median()
+    {
+        var a = parseInt( document.getElementById("f1").value);
+        var b = parseInt(document.getElementById("f2").value);
+        c;
+        document.getElementById("median").value =c;
+      
+    }
+    function mode()
+    {
+        var a = parseInt( document.getElementById("f1").value);
+        var b = parseInt(document.getElementById("f2").value);
+        c;
+        document.getElementById("mode").value =c;
+      
+    }*/
+
+    </script>
+</body>
+</html>

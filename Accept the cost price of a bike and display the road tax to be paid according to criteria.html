@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept the cost price of a bike and display the road tax to be paid according to criteria</title>
+</head>
+<body>
+
+    <h1>Accept the cost price of a bike and display the road tax to be paid according to criteria</h1><br>
+
+    <h3>Cost price(in Rs)----------------------Tax<br>
+        >1,00,000--------------------------------15% <br>
+        >50,000 and <=1,00,000 -------------10%<br>
+        <=50000 --------------------------------5% </h3><br>
+
+    Enter Bike price<input id="cp"><br>
+    <p id="result"></p>
+    <button onclick="Tax()">Show Tax Rates</button>
+
+    <script>
+
+function Tax()
+{
+  var costPrice = document.getElementById("cp").value;
+  var roadTax;
+
+  if (costPrice > 100000) 
+  {
+    roadTax = costPrice*(15/100);
+}
+   else if (costPrice > 50000 && costPrice <= 100000)
+   {
+    
+    roadTax = costPrice*(10/100);
+
+   }
+    
+   else if (costPrice <= 50000)
+    {
+
+        roadTax = costPrice*(5/100);
+
+    }
+    else
+    {
+    roadTax = "You entered an invalid price.";
+    }
+
+  document.getElementById("result").innerHTML = "The road tax to be paid is: " + roadTax;
+}
+ 
+
+
+
+    </script>
+
+
+</body>
+</html>

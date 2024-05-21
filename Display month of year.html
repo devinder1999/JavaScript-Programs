@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Months of Year with Enter Values between 1 to 12</title>
+</head>
+<body>
+    
+    <h1>Program:-(12) Display Months of Year with Enter Values between 1 to 12</h1>
+
+    Enter Any Number value:-<input id="num"><br>
+
+    Show Output :-<h3 id="result"></h3>
+    <button onclick="month()">Print Month</button><br>
+
+    <script>
+
+    function month()
+{
+    var a = parseInt(document.getElementById("num").value);
+
+    if(a==1)
+    {
+        console.log(" January ")
+    }
+
+    else if(a==2)
+    {
+        console.log( " Febuary ")
+    }
+
+    else if(a==3)
+    {
+        console.log( " March ")
+    }
+
+    else if(a==4)
+    {
+        console.log( " April ")
+    }
+
+    else if(a==5)
+    {
+        console.log( " May ")
+    }
+
+    else if(a==6)
+    {
+        console.log( " June ")
+    }
+
+    else if(a==7)
+    {
+        console.log( " July ")
+    }
+   
+    else if(a==8)
+    {
+        console.log( " August ")
+    }
+
+    else if(a==9)
+    {
+        console.log( " Sepetember ")
+    }
+
+    else if(a==10)
+    {
+        console.log(" October ")
+    }
+
+    else if(a==11) 
+    {
+        console.log( " November ")
+    }
+
+    else if(a==12)
+    {
+        console.log( " December ")
+    }
+    else{
+        console.log("Invalid Input ,please try again")
+    }
+
+
+    console.log("program end ")
+}
+
+</Script>
+
+</body>
+</html>

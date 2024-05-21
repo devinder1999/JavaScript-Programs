@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF-Else Programs Voting, Positive & Negative, Even & Odd</title>
+</head>
+<body>
+
+    <h1>Program:-(1)Find Age for Voting is Eligible or Not Eligible</h1>
+
+    Enter Your Age:-<input id="num"><br>
+    Show Result :-<p id="output"></p>
+    <button onclick="age()">Check Eligibility</button><br>
+
+    <h1>Program:-(2)Check Your By Your Age You Are a Senior Citizen or Not</h1>
+
+    Enter Your Age:-<input id="num1"><br>
+    Show Result :-<p id="pro"></p>
+    <button onclick="program()">Click Me</button><br>
+
+    <h1>Program:-(3)Find Number is Positive or Negative</h1>
+
+    Enter Any Number:-<input id="num2"><br>
+    Show Result :-<p id="output1"></p>
+    <button onclick="result()">Show Result</button><br>
+
+    <h1>Program:-(4)Check Number is Enter by User is Even or ODD</h1>
+
+    Enter Any Number:-<input id="a"><br>
+    Show Output :-<p id="o"></p>
+    <button onclick="output()">Click Here</button><br>
+
+    <h1>Program:-(5) Check Number is Enter Number is Divisible by 7 or not</h1>
+
+    Enter Any Number:-<input id="num3"><br>
+    Show Output :-<p id="output3"></p>
+    <button onclick="divisible()">Click Here</button><br>
+
+    <h1>Program:-(6) Check Number is Enter Number is Multiple of 5 or not</h1>
+
+    Enter Any Number:-<input id="num4"><br>
+    Show Output :-<p id="output4"></p>
+    <button onclick="multiple()">Click Here</button><br>
+
+    <script>
+
+//Find Age for Voting is Eligible or Not Eligible
+
+function age()
+{
+    var a = parseInt(document.getElementById("num").value)
+
+    if(a>=18)
+    {
+        document.getElementById("output").innerHTML= "You Are Eligible "
+    }
+    else
+    {
+        document.getElementById("output").innerHTML= "You Are Not Eligible  "
+    }
+}
+
+//Check Your By Your Age You Are a Senior Citizen or Not
+
+function program()
+{
+    var a = parseInt(document.getElementById("num1").value)
+
+    if(a>=60)
+    {
+        document.getElementById("pro").innerHTML= "You Are Senior Citizen "
+    }
+    else
+    {
+        document.getElementById("pro").innerHTML= "You Are Not a Senior Citizen "
+    }
+}
+
+//Find Number is Positive or Negative
+
+function result()
+{
+    var a = parseInt(document.getElementById("num2").value)
+
+    if(a>=0)
+    {
+        document.getElementById("output1").innerHTML= "Number is Positive "
+    }
+    else
+    {
+        document.getElementById("output1").innerHTML= "Number is Negative "
+    }
+}
+
+//Check Number is Enter by User is Even or ODD
+
+function output()
+{
+    var a = parseInt(document.getElementById("a").value)
+
+    if(a%2==0)
+    {
+        document.getElementById("o").innerHTML= "Number is Even "
+    }
+    else
+    {
+        document.getElementById("o").innerHTML= "Number is Odd "
+    }
+
+}
+
+//Check Number is Enter Number is Divisible by 7 or not
+
+function divisible()
+{
+    var a = parseInt(document.getElementById("num3").value)
+
+    if(a%7==0)
+    {
+        document.getElementById("output3").innerHTML= "Number is Divisible by 7"
+    }
+    else
+    {
+        document.getElementById("output3").innerHTML= "Number is Not Divisible by 7 "
+    }
+
+}
+
+//Check Number is Enter Number is Multiple of 5 or not
+
+function multiple()
+{
+    var a = parseInt(document.getElementById("num4").value)
+
+    if(a%5==0)
+    {
+        document.getElementById("output4").innerHTML= "Number is Multiple of 5"
+    }
+    else
+    {
+        document.getElementById("output4").innerHTML= "Number is Not Multiple of 5 "
+    }
+
+}
+
+    </script>
+    
+</body>
+</html>

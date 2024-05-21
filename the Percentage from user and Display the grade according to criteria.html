@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the Percentage from user and Display the grade according to criteria</title>
+</head>
+<body>
+
+<h1>This is Only for Class 1 to 12th class</h1>
+
+    <h1>Accept the Percentage from user and Display the grade according to criteria  <br>
+        above 80-------------------------A++ <br> 
+        60 to 80-------------------------A  <br>
+        50 to 60-------------------------B+ <br>
+        45 to 50-------------------------B <br>
+        25 to 45-------------------------C <br>
+        Below 25-------------------------D <br> </h1>
+
+   Enter Your Percentage <input id="p"><br>
+    <button onclick="result()">Show Result</button>
+
+    <script>
+
+function result()
+{
+
+    var per =parseInt(document.getElementById("p").value)
+
+    if (per>80 && per <=100)
+    {
+        alert("grade is A++")
+    }
+
+    else if (per>60 && per <=80)
+    {
+        alert("grade is A")
+    }
+
+    else if (per>50 && per <=60)
+    {
+        alert("grade is B++")
+    }
+
+    else if (per> 45 && per <=50)
+    {
+        alert("grade is B")
+    }
+
+    else if (per>25 && per <=45)
+    {
+        alert("grade is C")
+    }
+
+    else if (per>10 && per <=25)
+    {
+        alert("grade is D")
+        alert("Do Hard Work nd Acheive Better Percentage")
+    }
+
+    else
+    {
+        alert("Beter than next time")
+    }
+    
+}
+
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Decided to Give Bonus to employee according to criteria</title>
+</head>
+<body>
+
+    <h1>Company Decided to give Bonus to employee according to criteria
+        Time period of service-----------------------Bonus <br>
+        More Than 10 years---------------------------10% <br>
+        >=6 and <=10---------------------------------8% <br>
+        Less than 6 years----------------------------5% <br>
+
+        Ask user for their salary and years and print the net bonus amount
+    </h1>
+
+    Enter the Time Period of Service <input id="service"><br>
+    Enter Your Salary <input id="sal"><br>
+    Your Bonus:- <p id="result"></p>
+    
+    <button onclick="bonus()">Show Bonus Amount</button>
+
+    <script>
+        function bonus()
+        {
+            var service = parseInt(document.getElementById("service").value)
+            var amount = parseInt(document.getElementById("sal").value)
+
+            if(service>=10)
+            {
+               var b= (amount/100)*10;
+               alert(b);
+            }
+
+            else if(service>=6 && service <=10)
+            {
+               var b=(amount/100)*8
+               alert(b) 
+            }
+
+            else
+            {
+                var b = (amount/100)*5
+                alert(b)
+            }
+
+           
+        }
+    </script>
+
+    
+</body>
+</html>

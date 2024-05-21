@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Calulation with Formulas</title>
+</head>
+<body>
+
+	<h1>Equilateral Triangle Calculator</h1>
+ <p>Enter the side and height of the equilateral triangle:</p>
+
+ Side:<input id="side"><br>
+
+ Height:<input id="height"><br>
+
+ <button onclick="calculateTriangle()">Calculate</button>
+
+ Result: <p id="result"></p><br>
+
+ 
+
+    <h2>Enter the radius, central angle, and starting angle of the sector:</h2><br>
+
+	Radius: <input id="radius" value="5"><br>
+
+	Central angle: <input id="centralAngle" value="90"><br>
+
+	Starting angle: <input id="startingAngle" value="0"><br>
+
+	<button onclick="calculateSectorAndArc()">Calculate</button>
+    
+	<p id="r2">Result</p>
+
+
+<script>
+
+function calculateTriangle() 
+{
+ var side = parseFloat(document.getElementById("side").value);
+ var height = parseFloat(document.getElementById("height").value);
+
+
+ var perimeter = 3 * side;
+ var area = (side * height) / 2;
+
+ document.getElementById("result").innerHTML ="Perimeter (P): " + perimeter + "<br>" +"Area (A): " + area;
+
+}
+
+
+function calculateSectorAndArc()
+{
+	// Get the input values
+	var radius = document.getElementById("radius").value;
+	var centralAngle = document.getElementById("centralAngle").value;
+	var startingAngle = document.getElementById("startingAngle").value;
+
+	// Convert the angles from degrees to radians
+	centralAngle = centralAngle * ( 3.14/ 180);
+	startingAngle = startingAngle * ( 3.14/ 180);
+
+	// Calculate the end angle
+	var endAngle = startingAngle + centralAngle;
+
+	// Calculate the area of the sector
+	var sectorArea = (centralAngle / (2 * 3.14)) * 3.14 * Math.pow(radius, 2);
+
+	// Calculate the length of the arc
+	var arcLength = centralAngle * radius;
+
+	// Display the results
+	document.getElementById("r2").innerHTML = "Sector area: " + sectorArea.toFixed(2) + "<br>Arc length: " + arcLength.toFixed(2);
+}
+
+</script>
+    
+</body>
+</html>

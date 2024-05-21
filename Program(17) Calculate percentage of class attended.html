@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate percentage of class attended</title>
+</head>
+<body>
+<h1>Program(17):-</h1>
+    <h1>Calculate percentage of class attended <br>
+        (A) Total number of Working Days <br>
+        (B) Total number of Days for absent. <br>
+        After Calculating Percentage Is less than 75, than student will no be able to sit in exam.
+    </h1>
+    
+Number of Working Days :-<input id="days"><br>
+
+Number of Days for Absent :-<input id="absent"><br>
+
+Your Percentage is:-<p id="result"></p>
+
+Eligible or Not For sit in Exam :- <h3 id="sit"></h3>
+
+<button onclick="percentage()">Show Result</button>
+
+<script>
+
+function percentage()
+{
+var day = (document.getElementById("days").value)
+var absend = (document.getElementById("absent").value)
+
+var per = (day-absend)/day*100;
+document.getElementById("result").innerHTML = "your Percentage is " + per;
+
+if(per>=75)
+{
+    document.getElementById("sit").innerHTML = "you are Eligible For sit in Exam ";
+}
+
+else{
+    document.getElementById("sit").innerHTML = "you are Not Eligible For sit in Exam ";
+}
+
+}
+
+
+</script>
+
+</body>
+</html>

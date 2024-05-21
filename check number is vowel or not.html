@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check check number is vowel or not</title>
+</head>
+<body>
+
+    <h1>Program:-(14) check number is vowel or not</h1>
+
+    Enter Any Character:-<input id="num"><br>
+
+    Show Output :-<h3 id="result"></h3>
+    <button onclick="output()">Check it</button><br>
+
+    <script>
+
+    function output()
+{
+    var char = (document.getElementById("num").value);
+    var vowels = "aeiouAEIOU";
+
+    if(char==vowels)
+    {
+        document.getElementById("result").innerHTML= " Character is Vowel "
+    }
+
+    else
+    {
+        document.getElementById("result").innerHTML= " Character is not Vowel "
+    }
+}
+    </script>
+
+    
+</body>
+</html>

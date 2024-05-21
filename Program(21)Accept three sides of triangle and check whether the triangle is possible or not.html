@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept three sides of triangle and check whether the triangle is possible or not</title>
+</head>
+<body>
+    <h3> Accept three sides of triangle and check whether the triangle is possible or not. <br>
+        (triangle is possible only when sum of any two sides is greater than 3rd side)
+        </h3>
+        Enter First side of triangle:- <input id="first"> <br>
+        Enter Second side of triangle:- <input id="second"> <br>
+        Enter Third side of triangle:- <input id="third"> <br>
+
+
+        <p id="result"></p>
+
+        <button onclick="triangle()">Show Output</button>
+<script>
+
+function triangle()
+{
+    var s1=(document.getElementById("first").value)
+
+    var s2= (document.getElementById("second").value)
+
+    var s3= (document.getElementById("third").value)
+
+    if ((s1 + s2)> s3 && (s2 + s3) > s1 && (s1 + s3) > s2)
+    {
+    
+        document.getElementById("result").innerHTML=" Triangle is possible "; 
+    
+    }
+    
+    else
+    {
+    
+        document.getElementById("result").innerHTML= "Triangle not possible";
+    
+    }
+
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display the percentage according to Following criteria</title>
+</head>
+<body>
+<h1>Program(20):-</h1>
+    <h1>Display the percentage according to Following criteria</h1>
+        Percentage-----------------------Categeroy <br>
+        < 40-----------------------------Failed <br> 
+        >=40 & < 55-------------------------Fair  <br>
+        >=55 to 75-------------------------Good <br>
+        >=75 to 100-------------------------Excellent <br>
+    </h1>
+
+   Enter Your Percentage <input id="p"><br>
+   <p id="result"></p>
+    <button onclick="percentage()">Show Result</button>
+
+    <script>
+
+function percentage()
+{
+
+    var per =parseInt(document.getElementById("p").value)
+
+    if (per>75 && per<=100)
+    {
+        document.getElementById("result").innerHTML = " Your Category is :- Excellent =" + per;
+    }
+
+    else if (per>55 && per <=75)
+    {
+        document.getElementById("result").innerHTML = " Your Category is :- Good =" + per;
+    }
+
+    else if (per>40 && per <=55)
+    {
+        document.getElementById("result").innerHTML = " Your Category is :- Fair =" + per;
+    }
+
+    else if (per<40)
+    {
+        document.getElementById("result").innerHTML = " Your Category is :- Failed =" + per;
+    }
+
+    else
+    {
+        document.getElementById("result").innerHTML = " Please enter your Correct Percentage =" + per;
+    }
+    
+}
+
+    </script>
+
+</body>
+</html>
