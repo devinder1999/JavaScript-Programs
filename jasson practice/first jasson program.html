@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasson program</title>
+</head>
+<body>
+
+    <h1>First program with jasson</h1>
+
+    Enter your Name<input id="Name"><br>
+    Enter your Age <input id="Age"><br>
+    Enter your Email id <input id="Email"><br>
+    Enter your City <input id="City"><br>
+
+    
+    <button onclick="display()">Submit</button><br>
+
+    Your details Here
+    <div style="height: 250px; width: 270px;
+     border: 1px solid black;" id="result"></div>
+     <script>
+
+function display()
+{
+    var obj={
+
+        name:document.getElementById("Name").value ,
+        age:document.getElementById("Age").value ,
+        email:document.getElementById("Email").value ,
+        city:document.getElementById("City").value
+        
+    } 
+  document.getElementById("result").innerHTML=obj.name +"<br>"+ 
+            obj.age +"<br>"+ 
+            obj.email + "<br>" +
+            obj.city ;
+        
+          
+}
+
+    </script>
+    
+</body>
+</html>

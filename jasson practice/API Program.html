@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API XMLHttpRequest Program</title>
+</head>
+<body>
+
+    <h1>API XMLHttpRequest Program</h1>
+
+    <img src="https:\/\/images.dog.ceo\/breeds\/mountain-bernese\/n02107683_5363.jpg" id="dog">
+
+    <button onclick="dogimage()"> Change image </button>
+
+    <script>
+
+function dogimage()
+{
+
+   // var xhr = new XMLHttpRequest();
+
+//var url = "https://dog.ceo/api/breeds/image/random";
+
+//xhr.open("GET", url, true);
+
+//xhr.onreadystatechange = function () {
+  //if (xhr.readyState === 4 && xhr.status === 200) {
+    //var response = JSON.parse(xhr.responseText);
+    //console.log(response.message); // This will log the URL of a random dog image
+
+    document.getElementById("dog").src = "https:\/\/images.dog.ceo\/breeds\/lhasa\/n02098413_14953.jpg";
+  //}
+//};
+
+//xhr.send();
+
+    
+}
+
+    </script>
+    
+</body>
+</html>
