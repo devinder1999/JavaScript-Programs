@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Numbers with For loop</title>
+</head>
+<body>
+    
+<h1>Even Numbers with For loop</h1>
+
+<input id="number"><br>
+<button onclick="even()">Even Number</button>
+
+<script>
+
+function even()
+{
+
+var num=(document.getElementById("number").value);
+
+for(start=0; start<num; start++)
+{
+
+    if(start%2==0)
+        {
+            document.write(start + "<br>");
+        }
+
+}
+
+}
+
+</script>
+
+
+</body>
+</html>

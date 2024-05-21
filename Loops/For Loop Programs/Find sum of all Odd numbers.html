@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find sum of all odd Numbers</title>
+</head>
+<body>
+
+    <h1>
+        Find Sum of odd Numbers btw 1 to 50 with while loop
+    </h1>
+    
+    <input id="number">
+     <button onclick="show()">result</button>
+
+    
+     <script>
+
+function show()
+{
+
+    var num = parseInt(document.getElementById("number").value)
+
+    for(a=0 ; a<num; a++)
+    {
+
+        if(a%2!==0)
+        {
+        
+            result=a+num
+            document.write(num + "+" + a + "=" +result + "<br>");
+        }
+        
+    }
+
+}
+
+     </script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print all Natural Numbers from 1 to n</title>
+</head>
+<body>
+     <h1>
+        Print all Natural Numbers from 1 to n
+     </h1>
+
+     <input id="number">
+     <button onclick="show()">Show Natural Numbers</button>
+
+    
+     <script>
+
+function show()
+{
+
+    var num = parseInt(document.getElementById("number").value)
+    var n=50;
+
+    while(num<=n)
+    {
+        document.write(num + "<br>");
+        num++
+    }
+
+}
+
+     </script>
+
+</body>
+</html>

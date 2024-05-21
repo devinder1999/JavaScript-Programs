@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Sum of Even Numbers btw 1 to 50 with while loop</title>
+</head>
+<body>
+    
+    <h1>
+        Find Sum of Even Numbers btw 1 to 50 with while loop
+    </h1>
+    
+    <input id="number">
+     <button onclick="show()">Show Natural Numbers</button>
+
+    
+     <script>
+
+function show()
+{
+
+    var a = parseInt(document.getElementById("number").value)
+    var sum=0;
+
+    while(a<=50)
+    {
+
+        if(a%2==0)
+        {
+        
+            sum=sum+a
+            document.write(sum + "<br>");
+        }
+        
+        a++
+    }
+
+}
+
+     </script>
+
+</body>
+</html>

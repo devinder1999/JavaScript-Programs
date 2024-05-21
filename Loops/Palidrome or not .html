@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palidrome or not</title>
+</head>
+<body>
+
+    <h1> Palidrome or not </h1>
+    
+</body>
+
+<script>
+
+var a = 47674;
+var sum = 0;
+var b ;
+var z = a;
+
+while(a>0)
+{
+
+    b=a%10
+    sum = (sum * 10)+ b
+    a =parseInt (a/10)
+
+}
+
+console.log(sum)
+
+if(z==sum)
+{
+
+    console.log("Palidrome Number"+sum)
+
+}
+
+else{
+
+console.log("Not a Palidrome Number"+ sum)
+
+}
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Odd Number with Foor loop</title>
+</head>
+<body>
+    
+    <h1>Print Odd Number with Foor loop</h1>
+
+    
+    <input id="number">
+     <button onclick="odd()">Show odd Numbers</button>
+
+    
+     <script>
+
+function odd()
+{
+
+     var num = parseInt(document.getElementById("number").value)
+
+    for( a=0; a<num; a++)
+    {
+
+        if(a%2!==0)
+        {
+            document.write(a + "<br>");
+        }
+        
+    }
+
+}
+
+     </script>
+
+
+</body>
+</html>

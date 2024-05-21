@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Sum of any Natural Number</title>
+</head>
+<body>
+    
+    <h1>Print Sum of any Natural Number </h1>
+
+    Enter Any Number:-<input id="num"></input>
+
+    <button onclick=" show()">Print Sum of Naturals Numbers</button> <br><br>
+
+    if We enter 2 ya 16 ya any number <br>
+    jo hmne number enter kia h vhn tk ke natural number ka sum print hoga
+    
+<script>
+
+    
+    function show()
+    {
+        
+        var num = parseInt(document.getElementById("num").value)
+        var a=1;
+        var sum=0;
+        while(a<=num)
+        {
+            sum=sum+a
+            document.write("The Sum Of Naturals Numbers is :="+sum+"<br>")
+            a++
+        }    
+        
+    }
+    
+    </script>
+
+</body>
+</html>

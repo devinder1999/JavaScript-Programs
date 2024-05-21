@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print even number with For loop</title>
+</head>
+<body>
+    <h1>Print even Number with Foor loop</h1>
+
+    
+    <input id="number">
+     <button onclick="even()">Show Even Numbers</button>
+
+    
+     <script>
+
+function even()
+{
+
+    var end = parseInt(document.getElementById("number").value)
+
+    for(num=0;num<end;num++)
+    {
+
+        if(num%2==0)
+        {
+            document.write(num + "<br>");
+        }
+        
+    }
+
+}
+
+     </script>
+
+
+</body>
+</html>

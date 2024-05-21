@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print To Calculate sum of a digit of a number</title>
+</head>
+<body>
+    
+    <h1>Print To Calculate sum of a digit of a number</h1>
+
+    Enter Any three Digit positive number:-<input id="num"></input>
+
+    <button onclick=" show()">Print sum of a number</button> <br>
+    
+<script>
+
+    
+    function show()
+    {
+        
+        var n;
+        var rem;
+        var sum = 0;
+        var n=parseInt(document.getElementById("num").value)
+
+        while(n>0)
+        {
+
+            rem=n%10;
+            sum = sum +rem;
+            n = (n/10);
+
+        }
+
+        console.log(sum)
+
+    }
+    
+    </script>
+
+</body>
+</html>

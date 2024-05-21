@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter a Number and Print its Reverse</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var num = 1864521879;
+        var reverse = 0;
+        
+        while(num>0)
+        {
+        
+            reverse=reverse*10 + (num%10);
+            num=(num-num%10)/10
+
+        }
+        console.log(reverse)
+        
+        </script>
+
+</body>
+</html>
