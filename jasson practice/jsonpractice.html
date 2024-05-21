@@ -1,0 +1,30 @@
+
+<h1>my name is =</h1> <p id="name"></p>
+<h1>my gender is =</h1> <p id = "gender" > </p>
+<h1>my age is = </h1> <p id = "age"></p>
+<h1>my location is =</h1> <p id = "place" ></p>
+<h1>my education status =</h1> <p id="student"> </p>
+
+
+<script>
+    // var arr= [1,23,55]
+    // var obj1 = { key : value }
+     var devinder = {name:"devinder singh" , age :23 , gender : "Male" , Place :{birthplace: "firzopur" , currentcity:"mohali"} , student: false , topics :["javascript", "react","node","express","mongo"] }
+
+     document.getElementById("name").innerHTML = devinder.name;
+     document.getElementById("gender").innerHTML = devinder.gender;
+     document.getElementById("age").innerHTML = devinder.age;
+     document.getElementById("place").innerHTML = devinder.Place.currentcity;
+     document.getElementById("student").innerHTML = devinder.student;
+
+     console.log(devinder.topics[2])
+     for(i in devinder.topics)
+     {
+        console.log(i + devinder.topics[i])
+
+     }
+     for( i of devinder.topics)
+     {
+        console.log(i)
+     }
+</script>
