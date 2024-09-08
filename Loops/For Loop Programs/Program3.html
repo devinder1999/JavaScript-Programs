@@ -1,0 +1,25 @@
+<html></html>
+<head>
+    <title> Conditional statement is optional in for loop </title>
+</head>
+<body>
+
+    Example: Conditional statement is optional
+The below code demonstrates that the conditional statement in the for loop is optional. However, 
+if you don't write any condition, it will make infinite iterations. 
+So, you can use the 'break' keyword with the for loop to stop the execution of the loop, as we have done in the below code.
+
+   <h3>Output</h3> <p id = "output"> </p>
+    <script>
+        let output = document.getElementById("output");
+        let arr = [10, 3, 76, 23, 890, 123, 54]
+        var p = 0;
+        for (; ; p++) {
+            if (p >= arr.length) {
+                break;
+            }
+            output.innerHTML += "arr[" + p + "] -> " + arr[p] + "<br/>";
+        }
+    </script>
+</body>
+</html>
