@@ -1,0 +1,24 @@
+<html></html>
+<head>
+    <title> Initialization is optional in for loop </title>
+</head>
+<body>
+
+    Example: Initialization is optional
+    The below code demonstrates that the first statement is optional in the for loop. You can also initialize the variable outside the loop and use it with the loop.
+    
+    Whenever you need to use the looping variable, even after the execution of the loop is completed, you can initialize a variable in the parent scope of the loop,
+     as we have done in the below code. We also print the value of p outside the loop.<br>
+
+    <h3>Output</h3><p id = "output"> </p>
+    <script>
+        let output = document.getElementById("output");
+        var p = 0;
+        for (; p < 5; p++) {
+            output.innerHTML += "P -> " + p + "<br/>";
+        }
+        output.innerHTML += "Outside the loop! <br>";
+        output.innerHTML += "P -> " + p + "<br/>";
+    </script>
+</body>
+</html>

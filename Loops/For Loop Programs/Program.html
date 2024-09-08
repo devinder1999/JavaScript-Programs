@@ -1,0 +1,22 @@
+<html></html>
+<head>
+    <title> JavaScript - for loop </title>
+</head>
+<body>
+
+    Example: Executing a code block repeatedly
+In the example below, we used the for loop to print the output's updated value of the 'count' variable. 
+In each iteration of the loop, we increment the value of 'count' by 1 and print in the output.
+
+    <p id = "output"> </p>
+    <script>        
+        const output = document.getElementById("output");
+        output.innerHTML = "Starting Loop <br>";
+        let count;
+        for (let count = 0; count < 10; count++) {
+            output.innerHTML += "Current Count : " + count + "<br/>";
+        }
+        output.innerHTML += "Loop stopped!";
+    </script>
+</body>
+</html>
